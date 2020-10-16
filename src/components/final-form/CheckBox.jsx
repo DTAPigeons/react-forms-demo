@@ -4,13 +4,17 @@ import { Field } from 'react-final-form';
 
 export function CheckBox({ name, label }) {
 	return (
-		<Grid item xs={12} alignItems='flex-start' justify='space-between'>
-			<Field name={name}>
+		<Grid item xs={12}>
+			<Field name={name} type='checkbox'>
 				{({ input }) => (
 					<FormControlLabel
 						label={label}
 						control={
-							<Checkbox inputProps={input} name={name} checked={input.value} />
+							<Checkbox
+								inputProps={input}
+								name={name}
+								checked={input.checked}
+							/>
 						}
 					/>
 				)}

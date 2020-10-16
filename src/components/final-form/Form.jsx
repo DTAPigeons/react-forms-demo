@@ -42,12 +42,7 @@ export function FormComponent() {
 
 	return (
 		<Container>
-			<Grid
-				container
-				xs={12}
-				justify='flex-end'
-				alignItems='center'
-				direction='column'>
+			<Grid container justify='flex-end' alignItems='center' direction='column'>
 				<Form
 					onSubmit={onSubmit}
 					subscription={{

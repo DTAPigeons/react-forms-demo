@@ -4,7 +4,7 @@ import { Field } from 'react-final-form';
 
 export function Input({ name, label, validate }) {
 	return (
-		<Grid item xs={12} alignItems='flex-start' justify='space-between'>
+		<Grid item xs={12}>
 			<Field
 				name={name}
 				validate={validate}
